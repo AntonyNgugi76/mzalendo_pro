@@ -1,0 +1,23 @@
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore configuration files
+src/configs/firebaseServiceAccount.json
+
+configs/firebaseServiceAccount.json
+src/configs/
+*.config.js
+*.config.json
+*.config.ts
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
