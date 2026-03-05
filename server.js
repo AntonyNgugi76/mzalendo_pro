@@ -1,15 +1,15 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const runRolloverJob = require("./jobs/rollOverJobs");
+const runRolloverJob = require("./src/jobs/rolloverJobs");
 
-const connectDB = require("./configs/db");
+const connectDB = require("./src/configs/db");
 
-const authRoutes = require("./routes/authRoutes");
-const employeeRoutes = require("./routes/employeeRoutes");
-const sessionRoutes = require("./routes/sessionRoutes");
-const reportRoutes = require("./routes/reportRoutes");
-const dashboardRoutes = require("./routes/dashboardRoutes");
+const authRoutes = require("./src/routes/authRoutes");
+const employeeRoutes = require("./src/routes/employeeRoutes");
+const sessionRoutes = require("./src/routes/sessionRoutes");
+const reportRoutes = require("./src/routes/reportRoutes");
+const dashboardRoutes = require("./src/routes/dashboardRoutes");
 
 const app = express();
 
